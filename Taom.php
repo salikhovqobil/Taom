@@ -15,7 +15,7 @@ class Ingredient
 $ingredients = array(
     new Ingredient("Piyoz", 'https://pngfre.com/wp-content/uploads/Onion-3-1.png'),
     new Ingredient("Kartoshka", 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yNV9mbGF0X2xheV9vbmVfc2luZ2xlX2RlbGljaW91c19wb3RhdG9faG9yaXpvbl83NmFiMDU2NC0wNTJhLTRlYTQtYTEyNS0wYmQ4YjFiNWJiYWMucG5n.png'),
-    new Ingredient("Yog", 'https://media.post.rvohealth.io/wp-content/uploads/sites/3/2020/02/324844_2200-1200x628.jpg'),
+    new Ingredient("Yog'", 'https://media.post.rvohealth.io/wp-content/uploads/sites/3/2020/02/324844_2200-1200x628.jpg'),
     new Ingredient("Go'sht", 'https://c0.klipartz.com/pngpicture/17/1014/gratis-png-carne-cruda-en-rodajas-carne-de-bistec-carne-roja-carne-ingredientes-de-carne-thumbnail.png'),
     new Ingredient("Bulg'or qalampir", 'https://w7.pngwing.com/pngs/419/293/png-transparent-red-bell-pepper-bell-pepper-vegetarian-cuisine-vegetable-trinidad-moruga-scorpion-seed-red-pepper-natural-foods-food-cayenne-pepper.png'),
     new Ingredient("Pomidor", 'https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png'),
@@ -27,7 +27,7 @@ $ingredients = array(
 class Dish
 {
     public $name;
-    public $image;
+//    public $image;
 
     public $ingredients = array();
 
@@ -35,7 +35,7 @@ class Dish
     {
         $this->name = $name;
         $this->ingredients = $ingredients;
-        $this->image = $image;
+//        $this->image = $image;
     }
 }
 
@@ -43,8 +43,8 @@ $dishes = array(
     new Dish("Kartoshka Palov", array("Piyoz", "Yog'","Kartoshka","Tuz",), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
     new Dish("Jizza", array("Piyoz", "Yog'", "Go'sht"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
     new Dish("Qozon Kabob", array("Piyoz", "Kartoshka", "Go'sht"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
-//    new Dish("Jizza", array("Piyoz", "Yog'"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
-//    new Dish("Achichu", array("Piyoz", "Pomidor'", "Bodring"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg')
+    new Dish("Jizza", array("Piyoz", "Yog'"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
+    new Dish("Achichu", array("Piyoz", "Pomidor", "Bodiring"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg')
 );
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff;
+            background-color: #111;
         }
 
         h1 {
