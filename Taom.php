@@ -43,7 +43,6 @@ $dishes = array(
     new Dish("Kartoshka Palov", array("Piyoz", "Yog'","Kartoshka","Tuz",), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
     new Dish("Jizza", array("Piyoz", "Yog'", "Go'sht"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
     new Dish("Qozon Kabob", array("Piyoz", "Kartoshka", "Go'sht"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
-    new Dish("Jizza", array("Piyoz", "Yog'"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg'),
     new Dish("Achichu", array("Piyoz", "Pomidor", "Bodiring"), 'https://i.ytimg.com/vi/NUZeMB8T0PU/maxresdefault.jpg')
 );
 
